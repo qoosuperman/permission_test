@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :users, :user_groups, :permission_resources
 
   root 'home#index'
+  resources :books
 end

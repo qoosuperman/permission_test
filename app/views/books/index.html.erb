@@ -1,0 +1,19 @@
+<h1>Books</h1>
+
+<button><%= link_to 'Add', new_book_path, class: 'btn btn-success' %></button>
+<table>
+  <thead>
+    <tr>
+      <td>NAME</td>
+      <td>User Id</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.name %></td>
+        <td><%= book.user_id %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
