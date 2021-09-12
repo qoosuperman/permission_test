@@ -16,7 +16,7 @@ default: &default
 development:
   <<: *default
   host: 127.0.0.1
-  database: demo_development
+  database: pundit_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -24,8 +24,8 @@ development:
 test:
   <<: *default
   host: 127.0.0.1
-  database: demo_test
+  database: pundit_test
 
 production:
   <<: *default
-  database: demo_production
+  database: pundit_production
