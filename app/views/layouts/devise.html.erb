@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DemoPermissionPundit</title>
+    <title>Demo</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -15,18 +15,18 @@
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="page-top">
-    <div id="wrapper">
-      <%= render 'layouts/sidebar' %>
-        <div id="content-wrapper" class="d-flex flex-column">
-          <div id="content">
-            <%= render 'layouts/navbar' %>
-            <% flash.each do |type, message|%>
-            <div class="alert alert-danger"><%= message%></div>
-            <% end %>
-            <%= yield %>
-          </div>
+  <body class="login-page">
+    <div class="login-box">
+      <div class="login-logo">
+        Demo
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body login-card-body">
+        <div class="login-box-msg">
+          <%= yield %>
         </div>
+      </div>
     </div>
   </body>
 </html>

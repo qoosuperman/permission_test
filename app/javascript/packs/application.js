@@ -7,6 +7,10 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+import '../sb_admin'
+
+// css
+import('styles/sb-admin-2.min.css')
 
 Rails.start()
 Turbolinks.start()
