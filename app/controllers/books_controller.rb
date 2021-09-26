@@ -1,4 +1,6 @@
 class BooksController < ApplicationController
+  authorize_resource
+  
   def index
     @books = Book.all
   end
